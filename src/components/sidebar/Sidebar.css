@@ -1,0 +1,91 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+  height: 100vh;
+  background-color: #f5f5f5;
+  border-right: 1px solid lightgray;
+}
+
+.sidebar__profile {
+  cursor: pointer;
+}
+
+.sidebar__searchIcon {
+  cursor: pointer;
+}
+.sidebar__header {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+.sidebar__addButton {
+  font-size: 28px !important;
+  margin-top: 5px;
+  color: #39a5f5;
+}
+
+.sidebar__headerSearch {
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  padding: 5px;
+  color: gray;
+  flex: 1;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.sidebar__headerSearch > input {
+  border: none;
+  outline-width: 0;
+  height: 25px;
+  background: transparent;
+  padding: 3px;
+  flex: 1;
+  font-size: 15px;
+}
+
+.sidebar__chats {
+  flex: 1;
+  overflow: scroll;
+}
+
+.sidebar__chats::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar__chats {
+/* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+.sidebar__footer {
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer__info {
+  flex: 1;
+  margin-left: 5px;
+}
+
+.sidebar__footer > button {
+  color: white;
+  background-color: orangered;
+  margin-left: 3px;
+}
+
+.sidebar__footer > button:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}

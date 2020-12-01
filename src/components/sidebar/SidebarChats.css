@@ -1,0 +1,25 @@
+.sidebarchats {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  transition: transform 0.2s ease-out;
+}
+
+.sidebarchats:hover {
+  transform: all 0.2s ease;
+  cursor: pointer;
+  background-color: #39a5f5;
+  color: white;
+}
+.sidebarchats__info {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.timestamp {
+  color: gray;
+  font-size: small;
+  margin-left: auto;
+  margin-top: -20px;
+}
