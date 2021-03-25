@@ -36,10 +36,12 @@ const Sidebar = () => {
   const addNewChat = (e) => {
     e.preventDefault();
     const newChat = prompt("Enter new channel");
-    db.collection("chats").add({
+    if (newChat !== null) {
+      db.collection("chats").add({ 
       chatName: newChat,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
+    }
   };
 
   return (
